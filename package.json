@@ -1,0 +1,34 @@
+{
+  "name": "hal2hyper",
+  "version": "0.1.0",
+  "description": "hal+json to hyper+json transform",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hypergroup/hal2hyper.git"
+  },
+  "keywords": [
+    "hypermedia",
+    "hal+json",
+    "hyper+json"
+  ],
+  "author": "Cameron Bytheway <bytheway.cameron@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hypergroup/hal2hyper/issues"
+  },
+  "homepage": "https://github.com/hypergroup/hal2hyper",
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.1.0"
+  },
+  "dependencies": {
+    "utils-merge": "^1.0.0"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "href": "/orders",
+  "next": {
+    "href": "/orders?page=2"
+  },
+  "find": {
+    "//documentation": "http://example.com/docs/rels/find",
+    "action": "/orders",
+    "method": "GET",
+    "input": {
+      "id": {
+        "type": "text"
+      }
+    }
+  },
+  "admin": {
+    "//documentation": "http://example.com/docs/rels/admin",
+    "collection": [
+      {
+        "href": "/admins/2",
+        "title": "Fred"
+      },
+      {
+        "href": "/admins/5",
+        "title": "Kate"
+      }
+    ]
+  },
+  "currentlyProcessing": 14,
+  "shippedToday": 20,
+  "order": {
+    "//documentation": "http://example.com/docs/rels/order",
+    "collection": [
+      {
+        "href": "/orders/123",
+        "basket": {
+          "//documentation": "http://example.com/docs/rels/basket",
+          "href": "/baskets/98712"
+        },
+        "customer": {
+          "//documentation": "http://example.com/docs/rels/customer",
+          "href": "/customers/7809"
+        },
+        "currency": "USD",
+        "status": "shipped",
+        "total": 30
+      },
+      {
+        "href": "/orders/124",
+        "basket": {
+          "//documentation": "http://example.com/docs/rels/basket",
+          "href": "/baskets/97213"
+        },
+        "customer": {
+          "//documentation": "http://example.com/docs/rels/customer",
+          "href": "/customers/12369"
+        },
+        "currency": "USD",
+        "status": "processing",
+        "total": 20
+      }
+    ]
+  }
+}
